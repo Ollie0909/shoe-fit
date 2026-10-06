@@ -1,0 +1,55 @@
+{
+  "note": "材質參數為依一般皮革特性設定的估計值（demo 用），之後應以拉伸測試的實測數據取代。stretchWidth / stretchInstep = 磨合後寬度／腳背方向最多可撐開的比例。",
+  "lengthNote": "皮革主要是「寬度」和「腳背」方向會撐開，長度幾乎不會變，所以太短的鞋不會因為材質而變合腳。",
+  "materials": {
+    "suede": {
+      "name": "麂皮",
+      "stretchWidth": 0.06,
+      "stretchInstep": 0.05,
+      "breakIn": "約 1–2 週",
+      "note": "纖維較鬆、延展性最好，壓迫處會明顯鬆開。"
+    },
+    "nappa": {
+      "name": "納帕小牛皮",
+      "stretchWidth": 0.04,
+      "stretchInstep": 0.035,
+      "breakIn": "約 2 週",
+      "note": "柔軟細緻，延展性中上。"
+    },
+    "calf": {
+      "name": "小牛皮",
+      "stretchWidth": 0.03,
+      "stretchInstep": 0.025,
+      "breakIn": "約 2–3 週",
+      "note": "會慢慢服貼腳型，延展性中等。"
+    },
+    "oiled": {
+      "name": "油鞣牛皮",
+      "stretchWidth": 0.035,
+      "stretchInstep": 0.03,
+      "breakIn": "約 3–4 週",
+      "note": "皮革厚、初期較硬，磨合後會順著腳型服貼。"
+    },
+    "grain": {
+      "name": "粒面牛皮",
+      "stretchWidth": 0.02,
+      "stretchInstep": 0.02,
+      "breakIn": "約 4 週以上",
+      "note": "皮面厚實耐磨，延展有限。"
+    },
+    "cordovan": {
+      "name": "馬臀皮",
+      "stretchWidth": 0.01,
+      "stretchInstep": 0.01,
+      "breakIn": "幾乎不會撐開",
+      "note": "纖維非常緊密，只會隨腳型起皺，不會變寬。"
+    },
+    "suede-mesh": {
+      "name": "麂皮拼接網布",
+      "stretchWidth": 0.05,
+      "stretchInstep": 0.05,
+      "breakIn": "幾乎不需磨合",
+      "note": "鞋面柔軟透氣，一開始就有彈性。"
+    }
+  }
+}

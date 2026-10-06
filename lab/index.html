@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>3D 試穿 Lab｜FIT ATELIER</title>
+  <meta name="description" content="用鞋內 3D 空間與材質延展性，模擬一雙鞋穿起來哪裡會緊、磨合後會不會改善。">
+  <meta name="theme-color" content="#f6f3ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="3D 試穿 Lab｜FIT ATELIER">
+  <meta property="og:description" content="鞋內 3D 空間 × 材質延展性，模擬一雙鞋穿起來哪裡會緊、磨合後會不會改善。">
+  <meta property="og:image" content="https://ollie0909.github.io/shoe-fit/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f1d1a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9ad7f' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="../">FIT ATELIER</a>
+      <p class="tagline">海外精品鞋尺寸顧問</p>
+      <nav class="site-nav" aria-label="主選單">
+        <a href="../">尺寸建議</a>
+        <a href="./" aria-current="page">3D 試穿 Lab</a>
+        <a href="../about.html">方法說明</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="demo-banner" role="note">
+    <div class="wrap"><strong>Demo</strong>　鞋內 3D 數據與材質參數為<b>模擬值</b>，不是實際掃描結果。</div>
+  </div>
+
+  <main class="wrap">
+    <section class="lab-hero">
+      <p class="lab-kicker">Fit Lab</p>
+      <h1>形狀吻合，<br>不等於穿起來舒服。</h1>
+      <p>我們比對你的腳和鞋內的 3D 空間，再把材質會不會撐開算進去，模擬剛買時與磨合後，哪裡會緊、哪裡會鬆。</p>
+    </section>
+
+    <form id="lab-form" class="card" novalidate>
+      <h2 class="card-title">你的腳</h2>
+      <button type="button" class="scan-btn" data-footscan>
+        <span class="scan-ico" aria-hidden="true"></span>
+        <span><b>用手機拍照量腳</b><small>把腳踩在 A4 紙上拍一張，自動算出腳長、腳寬</small></span>
+      </button>
+      <p class="or-line"><span>或自己輸入</span></p>
+      <div class="field-row three">
+        <label class="field">
+          <span class="field-label">腳長 <em>必填</em></span>
+          <span class="input-unit"><input id="lab-length" type="number" inputmode="decimal" step="0.1" min="18" max="33" placeholder="25.5" required><span>cm</span></span>
+        </label>
+        <label class="field">
+          <span class="field-label">腳寬</span>
+          <span class="input-unit"><input id="lab-width" type="number" inputmode="decimal" step="0.1" min="6" max="14" placeholder="10.0"><span>cm</span></span>
+        </label>
+        <label class="field">
+          <span class="field-label">腳背高</span>
+          <span class="input-unit"><input id="lab-instep" type="number" inputmode="decimal" step="0.1" min="4" max="10" placeholder="6.5"><span>cm</span></span>
+        </label>
+      </div>
+      <p class="field-help">腳寬、腳背高選填；沒填會用平均腳型估計。</p>
+      <p class="field-error" id="lab-error" role="alert" hidden></p>
+      <details class="howto">
+        <summary>腳背高怎麼量？</summary>
+        <div class="howto-body">
+          <ol>
+            <li>坐著，腳自然平放在地上。</li>
+            <li>找到腳背最高的地方（大約在腳長的一半、鞋帶打結的位置）。</li>
+            <li>用尺垂直量地面到那一點的高度。一般成人約 6–7.5 cm。</li>
+          </ol>
+        </div>
+      </details>
+    </form>
+
+    <div class="card">
+      <h2 class="card-title">想試穿哪一雙？</h2>
+      <div class="segmented" role="radiogroup" aria-label="男款或女款">
+        <label><input type="radio" name="g" value="男" checked><span>男款</span></label>
+        <label><input type="radio" name="g" value="女"><span>女款</span></label>
+      </div>
+      <div id="picker"></div>
+    </div>
+
+    <button type="button" class="btn-primary" id="run-btn" disabled>開始 3D 試穿模擬</button>
+
+    <section id="lab-results" class="lab-results" hidden aria-live="polite">
+      <div class="viewer-card">
+        <div class="viewer" id="viewer"><span class="viewer-hint">拖曳旋轉・兩指縮放</span></div>
+        <div class="viewer-controls">
+          <div class="segmented" role="radiogroup" aria-label="剛買時或磨合後" style="margin:0">
+            <label><input type="radio" name="mode" value="initial" checked><span>剛買時</span></label>
+            <label><input type="radio" name="mode" value="after"><span id="after-label">磨合後</span></label>
+          </div>
+          <div class="legend">
+            <span style="--c: var(--z-tight)">太緊</span>
+            <span style="--c: var(--z-snug)">略緊</span>
+            <span style="--c: var(--z-good)">剛好</span>
+            <span style="--c: var(--z-loose)">偏鬆</span>
+          </div>
+          <div class="size-tabs" id="size-tabs"></div>
+        </div>
+      </div>
+
+      <div class="card" id="lab-summary"></div>
+
+      <div class="card">
+        <h3 class="lab-section-title">四個區域的比對</h3>
+        <ul class="zones" id="zones"></ul>
+      </div>
+
+      <div class="card" id="material-card"></div>
+
+      <a class="lab-promo" id="to-size" href="../">
+        <span class="lab-promo-k">對照買家回饋</span>
+        <span class="lab-promo-t">看看腳長和你相近的人，最後都買幾號</span>
+        <span class="lab-promo-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="prose" style="padding-top:34px">
+      <h2 style="margin-top:0">真實版本怎麼運作</h2>
+      <div class="card">
+        <ol class="how-steps">
+          <li><span><b>掃描鞋內空間</b>用鞋內 3D 掃描儀，或先以矽膠翻模再掃描，取得每個尺碼的鞋內長度、寬度與高度；也可以向品牌取得楦頭 CAD 檔。</span></li>
+          <li><span><b>測量材質</b>以拉伸測試量出不同皮革在寬度、腳背方向能撐開多少，以及需要多久磨合。</span></li>
+          <li><span><b>比對你的腳</b>分成腳趾、前掌、腳背、腳跟四區比對，算出剛買時與磨合後的差異，再推薦最合腳的尺碼。</span></li>
+        </ol>
+      </div>
+      <p class="small" style="color:var(--muted)">Demo 版的鞋內尺寸是依楦型參數推算的模擬值，材質參數為一般皮革特性的估計，僅用於展示概念。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>FIT ATELIER 為獨立服務，與文中提及的品牌沒有合作或代理關係；3D 模型為示意。商品照片來源為各品牌官網與零售商網站，著作權屬原權利人，僅供課堂展示使用。</p>
+      <p>你的資料只在這台裝置上計算，不會上傳。<a href="../about.html">方法說明</a></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="../js/lab.js"></script>
+</body>
+</html>

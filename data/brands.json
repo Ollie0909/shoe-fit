@@ -1,0 +1,66 @@
+[
+  {
+    "id": "duke-dexter",
+    "name": "DUKE + DEXTER",
+    "order": 1,
+    "origin": "倫敦",
+    "guide": "official",
+    "guideSummary": "有官方腳長對照表（男、女款分開）。樂福鞋、瑪莉珍鞋、德比鞋為正常尺寸，介於半號時往上拿一號；只有整數號。"
+  },
+  {
+    "id": "common-projects",
+    "name": "Common Projects",
+    "order": 2,
+    "origin": "紐約・義大利製",
+    "guide": "retailer",
+    "guideSummary": "使用義大利尺碼（不是 EU），多數人比平常的 EU 尺寸小一號；楦頭偏窄。"
+  },
+  {
+    "id": "axel-arigato",
+    "name": "Axel Arigato",
+    "order": 3,
+    "origin": "斯德哥爾摩",
+    "guide": "retailer",
+    "guideSummary": "多數鞋款沒有半號，介於兩號之間時通常往上拿；有網友認為鞋型不太適合東方人腳型。"
+  },
+  {
+    "id": "autry",
+    "name": "Autry",
+    "order": 4,
+    "origin": "美國",
+    "guide": "unverified",
+    "guideSummary": "尚無可查證的尺寸指南，偏移值為依一般認知設定的保守預設（待驗證）。"
+  },
+  {
+    "id": "viberg",
+    "name": "Viberg",
+    "order": 5,
+    "origin": "加拿大",
+    "guide": "retailer",
+    "guideSummary": "依楦型而異；幾乎所有楦型都建議比 Brannock 量腳器尺寸小一號。麂皮款會隨穿著撐開。"
+  },
+  {
+    "id": "crockett-jones",
+    "name": "Crockett & Jones",
+    "order": 6,
+    "origin": "英國北安普敦",
+    "guide": "retailer",
+    "guideSummary": "通常跟 Viberg、Tricker's 同號或小半號，比 Alden、Red Wing 小一號；標準 E 寬，可容納 D 到 EE 的腳。"
+  },
+  {
+    "id": "alden",
+    "name": "Alden",
+    "order": 7,
+    "origin": "美國麻州",
+    "guide": "unverified",
+    "guideSummary": "依楦型而異，尚無可查證的指南，偏移值為保守預設（待驗證）。"
+  },
+  {
+    "id": "edward-green",
+    "name": "Edward Green",
+    "order": 8,
+    "origin": "英國北安普敦",
+    "guide": "unverified",
+    "guideSummary": "依楦型而異，尚無可查證的指南，偏移值為保守預設（待驗證）。"
+  }
+]

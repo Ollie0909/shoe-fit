@@ -1,0 +1,66 @@
+{
+  "generic": {
+    "name": "通用腳長對照表（依 Brannock 量腳器換算）",
+    "note": "footMm 是「剛好對應這個尺碼」的腳長。腳長落在兩列之間時，程式會按比例算出連續值（例如 UK 7.3）。UK 尺碼男女通用；US 男 = UK + 1，US 女 = UK + 2；EU 為常見對照，各品牌可能差半號。",
+    "rows": [
+      { "uk": 1, "usM": 2, "usW": 3, "eu": 33.5, "footMm": 203.2 },
+      { "uk": 1.5, "usM": 2.5, "usW": 3.5, "eu": 34, "footMm": 207.4 },
+      { "uk": 2, "usM": 3, "usW": 4, "eu": 34.5, "footMm": 211.7 },
+      { "uk": 2.5, "usM": 3.5, "usW": 4.5, "eu": 35, "footMm": 215.9 },
+      { "uk": 3, "usM": 4, "usW": 5, "eu": 36, "footMm": 220.1 },
+      { "uk": 3.5, "usM": 4.5, "usW": 5.5, "eu": 36.5, "footMm": 224.4 },
+      { "uk": 4, "usM": 5, "usW": 6, "eu": 37, "footMm": 228.6 },
+      { "uk": 4.5, "usM": 5.5, "usW": 6.5, "eu": 37.5, "footMm": 232.8 },
+      { "uk": 5, "usM": 6, "usW": 7, "eu": 38.5, "footMm": 237.1 },
+      { "uk": 5.5, "usM": 6.5, "usW": 7.5, "eu": 39, "footMm": 241.3 },
+      { "uk": 6, "usM": 7, "usW": 8, "eu": 39.5, "footMm": 245.5 },
+      { "uk": 6.5, "usM": 7.5, "usW": 8.5, "eu": 40.5, "footMm": 249.8 },
+      { "uk": 7, "usM": 8, "usW": 9, "eu": 41, "footMm": 254.0 },
+      { "uk": 7.5, "usM": 8.5, "usW": 9.5, "eu": 41.5, "footMm": 258.2 },
+      { "uk": 8, "usM": 9, "usW": 10, "eu": 42, "footMm": 262.5 },
+      { "uk": 8.5, "usM": 9.5, "usW": 10.5, "eu": 43, "footMm": 266.7 },
+      { "uk": 9, "usM": 10, "usW": 11, "eu": 43.5, "footMm": 270.9 },
+      { "uk": 9.5, "usM": 10.5, "usW": 11.5, "eu": 44, "footMm": 275.2 },
+      { "uk": 10, "usM": 11, "usW": 12, "eu": 44.5, "footMm": 279.4 },
+      { "uk": 10.5, "usM": 11.5, "usW": 12.5, "eu": 45.5, "footMm": 283.6 },
+      { "uk": 11, "usM": 12, "usW": 13, "eu": 46, "footMm": 287.9 },
+      { "uk": 11.5, "usM": 12.5, "usW": 13.5, "eu": 46.5, "footMm": 292.1 },
+      { "uk": 12, "usM": 13, "usW": 14, "eu": 47, "footMm": 296.3 },
+      { "uk": 12.5, "usM": 13.5, "usW": 14.5, "eu": 48, "footMm": 300.6 },
+      { "uk": 13, "usM": 14, "usW": 15, "eu": 48.5, "footMm": 304.8 },
+      { "uk": 13.5, "usM": 14.5, "usW": 15.5, "eu": 49, "footMm": 309.0 },
+      { "uk": 14, "usM": 15, "usW": 16, "eu": 50, "footMm": 313.3 }
+    ]
+  },
+  "official": {
+    "dd-men": {
+      "name": "DUKE + DEXTER 官方男款腳長對照表",
+      "system": "UK",
+      "usLabel": "US 男",
+      "note": "官方男款樂福鞋表。maxMm = 這個尺碼適合的最大腳長；小於 UK 7 的腳長官方沒有列出。",
+      "rows": [
+        { "size": 7, "maxMm": 256, "us": 8, "eu": 41 },
+        { "size": 8, "maxMm": 265, "us": 9, "eu": 42 },
+        { "size": 9, "maxMm": 277, "us": 10, "eu": 43 },
+        { "size": 10, "maxMm": 286, "us": 11, "eu": 44 },
+        { "size": 11, "maxMm": 296, "us": 12, "eu": 45 },
+        { "size": 12, "maxMm": 300, "us": 13, "eu": 46 },
+        { "size": 13, "maxMm": 315, "us": 14, "eu": 47 }
+      ]
+    },
+    "dd-women": {
+      "name": "DUKE + DEXTER 官方女款腳長對照表",
+      "system": "UK",
+      "usLabel": "US 女",
+      "note": "官方女款樂福鞋表。官方原表 UK 5 為 229–237mm、UK 6 為 236–245mm，236–237mm 重疊；此處暫將 UK 6 改為 238–245mm，待官網核對。",
+      "rows": [
+        { "size": 3, "maxMm": 220, "us": 5, "eu": 36 },
+        { "size": 4, "maxMm": 228, "us": 6, "eu": 37 },
+        { "size": 5, "maxMm": 237, "us": 7, "eu": 38 },
+        { "size": 6, "maxMm": 245, "us": 8, "eu": 39 },
+        { "size": 7, "maxMm": 254, "us": 9, "eu": 40 },
+        { "size": 8, "maxMm": 262, "us": 10, "eu": 41 }
+      ]
+    }
+  }
+}

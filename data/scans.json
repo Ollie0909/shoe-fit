@@ -1,0 +1,2701 @@
+{
+ "note": "全部為程式依楦型參數推算的模擬鞋內尺寸（demo 用），不是實際掃描結果。產生方式見 scripts/generate_scans.py。",
+ "scans": {
+  "dd-wilde-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 7,
+     "lengthMm": 262.5,
+     "ballWidthMm": 98.3,
+     "instepHeightMm": 65.4,
+     "heelWidthMm": 67.6
+    },
+    {
+     "size": 8,
+     "lengthMm": 271.4,
+     "ballWidthMm": 101.3,
+     "instepHeightMm": 67.5,
+     "heelWidthMm": 70.1
+    },
+    {
+     "size": 9,
+     "lengthMm": 281.6,
+     "ballWidthMm": 106.0,
+     "instepHeightMm": 70.1,
+     "heelWidthMm": 73.1
+    },
+    {
+     "size": 10,
+     "lengthMm": 292.8,
+     "ballWidthMm": 110.0,
+     "instepHeightMm": 72.4,
+     "heelWidthMm": 75.3
+    },
+    {
+     "size": 11,
+     "lengthMm": 301.9,
+     "ballWidthMm": 113.3,
+     "instepHeightMm": 74.9,
+     "heelWidthMm": 77.9
+    },
+    {
+     "size": 12,
+     "lengthMm": 309.2,
+     "ballWidthMm": 116.7,
+     "instepHeightMm": 77.2,
+     "heelWidthMm": 79.4
+    },
+    {
+     "size": 13,
+     "lengthMm": 319.0,
+     "ballWidthMm": 119.8,
+     "instepHeightMm": 79.2,
+     "heelWidthMm": 82.6
+    }
+   ]
+  },
+  "dd-wilde-w": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 3,
+     "lengthMm": 226.9,
+     "ballWidthMm": 80.2,
+     "instepHeightMm": 55.8,
+     "heelWidthMm": 56.3
+    },
+    {
+     "size": 4,
+     "lengthMm": 235.2,
+     "ballWidthMm": 83.0,
+     "instepHeightMm": 57.8,
+     "heelWidthMm": 58.6
+    },
+    {
+     "size": 5,
+     "lengthMm": 243.4,
+     "ballWidthMm": 86.3,
+     "instepHeightMm": 59.6,
+     "heelWidthMm": 61.1
+    },
+    {
+     "size": 6,
+     "lengthMm": 251.8,
+     "ballWidthMm": 89.7,
+     "instepHeightMm": 62.5,
+     "heelWidthMm": 63.0
+    },
+    {
+     "size": 7,
+     "lengthMm": 260.9,
+     "ballWidthMm": 93.0,
+     "instepHeightMm": 63.9,
+     "heelWidthMm": 65.8
+    },
+    {
+     "size": 8,
+     "lengthMm": 268.7,
+     "ballWidthMm": 97.0,
+     "instepHeightMm": 66.8,
+     "heelWidthMm": 68.0
+    }
+   ]
+  },
+  "dd-maryjane-w": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 3,
+     "lengthMm": 226.3,
+     "ballWidthMm": 80.4,
+     "instepHeightMm": 55.9,
+     "heelWidthMm": 56.6
+    },
+    {
+     "size": 4,
+     "lengthMm": 234.5,
+     "ballWidthMm": 83.2,
+     "instepHeightMm": 58.0,
+     "heelWidthMm": 59.0
+    },
+    {
+     "size": 5,
+     "lengthMm": 243.8,
+     "ballWidthMm": 86.4,
+     "instepHeightMm": 60.7,
+     "heelWidthMm": 60.7
+    },
+    {
+     "size": 6,
+     "lengthMm": 252.3,
+     "ballWidthMm": 89.8,
+     "instepHeightMm": 63.0,
+     "heelWidthMm": 63.3
+    },
+    {
+     "size": 7,
+     "lengthMm": 261.0,
+     "ballWidthMm": 93.3,
+     "instepHeightMm": 65.2,
+     "heelWidthMm": 65.3
+    },
+    {
+     "size": 8,
+     "lengthMm": 268.9,
+     "ballWidthMm": 97.1,
+     "instepHeightMm": 67.5,
+     "heelWidthMm": 67.2
+    }
+   ]
+  },
+  "dd-derby-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 7,
+     "lengthMm": 265.2,
+     "ballWidthMm": 97.9,
+     "instepHeightMm": 66.1,
+     "heelWidthMm": 67.6
+    },
+    {
+     "size": 8,
+     "lengthMm": 274.2,
+     "ballWidthMm": 102.0,
+     "instepHeightMm": 68.4,
+     "heelWidthMm": 69.4
+    },
+    {
+     "size": 9,
+     "lengthMm": 285.3,
+     "ballWidthMm": 105.7,
+     "instepHeightMm": 71.3,
+     "heelWidthMm": 72.3
+    },
+    {
+     "size": 10,
+     "lengthMm": 295.9,
+     "ballWidthMm": 109.5,
+     "instepHeightMm": 73.6,
+     "heelWidthMm": 75.6
+    },
+    {
+     "size": 11,
+     "lengthMm": 304.7,
+     "ballWidthMm": 113.3,
+     "instepHeightMm": 76.2,
+     "heelWidthMm": 77.8
+    },
+    {
+     "size": 12,
+     "lengthMm": 312.3,
+     "ballWidthMm": 116.1,
+     "instepHeightMm": 77.8,
+     "heelWidthMm": 79.9
+    },
+    {
+     "size": 13,
+     "lengthMm": 321.2,
+     "ballWidthMm": 119.5,
+     "instepHeightMm": 80.6,
+     "heelWidthMm": 82.2
+    }
+   ]
+  },
+  "dd-chelsea-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 7,
+     "lengthMm": 264.9,
+     "ballWidthMm": 98.0,
+     "instepHeightMm": 66.0,
+     "heelWidthMm": 67.5
+    },
+    {
+     "size": 8,
+     "lengthMm": 273.2,
+     "ballWidthMm": 102.1,
+     "instepHeightMm": 68.1,
+     "heelWidthMm": 69.9
+    },
+    {
+     "size": 9,
+     "lengthMm": 284.2,
+     "ballWidthMm": 106.0,
+     "instepHeightMm": 71.5,
+     "heelWidthMm": 72.8
+    },
+    {
+     "size": 10,
+     "lengthMm": 294.0,
+     "ballWidthMm": 109.8,
+     "instepHeightMm": 74.0,
+     "heelWidthMm": 75.1
+    },
+    {
+     "size": 11,
+     "lengthMm": 303.9,
+     "ballWidthMm": 113.7,
+     "instepHeightMm": 76.4,
+     "heelWidthMm": 77.5
+    },
+    {
+     "size": 12,
+     "lengthMm": 311.4,
+     "ballWidthMm": 116.7,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 79.9
+    },
+    {
+     "size": 13,
+     "lengthMm": 320.9,
+     "ballWidthMm": 119.7,
+     "instepHeightMm": 81.0,
+     "heelWidthMm": 82.5
+    }
+   ]
+  },
+  "cp-achilles-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 39,
+     "lengthMm": 260.0,
+     "ballWidthMm": 92.4,
+     "instepHeightMm": 64.6,
+     "heelWidthMm": 65.1
+    },
+    {
+     "size": 40,
+     "lengthMm": 266.2,
+     "ballWidthMm": 94.6,
+     "instepHeightMm": 66.3,
+     "heelWidthMm": 66.3
+    },
+    {
+     "size": 41,
+     "lengthMm": 274.0,
+     "ballWidthMm": 98.5,
+     "instepHeightMm": 68.6,
+     "heelWidthMm": 68.9
+    },
+    {
+     "size": 42,
+     "lengthMm": 278.5,
+     "ballWidthMm": 100.5,
+     "instepHeightMm": 69.4,
+     "heelWidthMm": 69.8
+    },
+    {
+     "size": 43,
+     "lengthMm": 286.8,
+     "ballWidthMm": 103.6,
+     "instepHeightMm": 71.7,
+     "heelWidthMm": 72.7
+    },
+    {
+     "size": 44,
+     "lengthMm": 293.2,
+     "ballWidthMm": 105.4,
+     "instepHeightMm": 73.5,
+     "heelWidthMm": 73.5
+    },
+    {
+     "size": 45,
+     "lengthMm": 299.7,
+     "ballWidthMm": 108.5,
+     "instepHeightMm": 75.6,
+     "heelWidthMm": 75.9
+    },
+    {
+     "size": 46,
+     "lengthMm": 308.3,
+     "ballWidthMm": 111.4,
+     "instepHeightMm": 77.4,
+     "heelWidthMm": 78.2
+    },
+    {
+     "size": 47,
+     "lengthMm": 312.6,
+     "ballWidthMm": 112.9,
+     "instepHeightMm": 78.6,
+     "heelWidthMm": 79.1
+    }
+   ]
+  },
+  "cp-achilles-w": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 35,
+     "lengthMm": 231.6,
+     "ballWidthMm": 81.3,
+     "instepHeightMm": 58.0,
+     "heelWidthMm": 57.3
+    },
+    {
+     "size": 36,
+     "lengthMm": 240.3,
+     "ballWidthMm": 85.5,
+     "instepHeightMm": 59.6,
+     "heelWidthMm": 60.0
+    },
+    {
+     "size": 37,
+     "lengthMm": 247.4,
+     "ballWidthMm": 87.1,
+     "instepHeightMm": 61.8,
+     "heelWidthMm": 61.3
+    },
+    {
+     "size": 38,
+     "lengthMm": 253.0,
+     "ballWidthMm": 90.0,
+     "instepHeightMm": 63.4,
+     "heelWidthMm": 63.5
+    },
+    {
+     "size": 39,
+     "lengthMm": 260.1,
+     "ballWidthMm": 92.4,
+     "instepHeightMm": 64.8,
+     "heelWidthMm": 64.9
+    },
+    {
+     "size": 40,
+     "lengthMm": 265.8,
+     "ballWidthMm": 95.4,
+     "instepHeightMm": 66.1,
+     "heelWidthMm": 66.9
+    },
+    {
+     "size": 41,
+     "lengthMm": 274.4,
+     "ballWidthMm": 98.8,
+     "instepHeightMm": 68.5,
+     "heelWidthMm": 69.1
+    },
+    {
+     "size": 42,
+     "lengthMm": 278.2,
+     "ballWidthMm": 99.7,
+     "instepHeightMm": 70.0,
+     "heelWidthMm": 69.5
+    }
+   ]
+  },
+  "cp-retro-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 39,
+     "lengthMm": 259.3,
+     "ballWidthMm": 92.5,
+     "instepHeightMm": 64.7,
+     "heelWidthMm": 64.4
+    },
+    {
+     "size": 40,
+     "lengthMm": 265.8,
+     "ballWidthMm": 94.8,
+     "instepHeightMm": 66.6,
+     "heelWidthMm": 66.1
+    },
+    {
+     "size": 41,
+     "lengthMm": 274.2,
+     "ballWidthMm": 98.2,
+     "instepHeightMm": 68.9,
+     "heelWidthMm": 68.9
+    },
+    {
+     "size": 42,
+     "lengthMm": 278.6,
+     "ballWidthMm": 99.8,
+     "instepHeightMm": 69.7,
+     "heelWidthMm": 70.0
+    },
+    {
+     "size": 43,
+     "lengthMm": 287.5,
+     "ballWidthMm": 103.7,
+     "instepHeightMm": 72.4,
+     "heelWidthMm": 72.1
+    },
+    {
+     "size": 44,
+     "lengthMm": 293.0,
+     "ballWidthMm": 106.0,
+     "instepHeightMm": 73.6,
+     "heelWidthMm": 74.2
+    },
+    {
+     "size": 45,
+     "lengthMm": 300.3,
+     "ballWidthMm": 108.6,
+     "instepHeightMm": 75.2,
+     "heelWidthMm": 75.4
+    },
+    {
+     "size": 46,
+     "lengthMm": 308.3,
+     "ballWidthMm": 111.6,
+     "instepHeightMm": 77.9,
+     "heelWidthMm": 77.7
+    },
+    {
+     "size": 47,
+     "lengthMm": 312.1,
+     "ballWidthMm": 112.9,
+     "instepHeightMm": 79.1,
+     "heelWidthMm": 79.1
+    }
+   ]
+  },
+  "cp-chelsea-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 39,
+     "lengthMm": 260.6,
+     "ballWidthMm": 92.5,
+     "instepHeightMm": 65.0,
+     "heelWidthMm": 64.5
+    },
+    {
+     "size": 40,
+     "lengthMm": 266.9,
+     "ballWidthMm": 95.1,
+     "instepHeightMm": 66.7,
+     "heelWidthMm": 66.6
+    },
+    {
+     "size": 41,
+     "lengthMm": 275.7,
+     "ballWidthMm": 98.2,
+     "instepHeightMm": 68.6,
+     "heelWidthMm": 69.0
+    },
+    {
+     "size": 42,
+     "lengthMm": 279.6,
+     "ballWidthMm": 100.2,
+     "instepHeightMm": 70.0,
+     "heelWidthMm": 69.8
+    },
+    {
+     "size": 43,
+     "lengthMm": 287.8,
+     "ballWidthMm": 103.1,
+     "instepHeightMm": 72.6,
+     "heelWidthMm": 72.7
+    },
+    {
+     "size": 44,
+     "lengthMm": 294.3,
+     "ballWidthMm": 105.7,
+     "instepHeightMm": 73.5,
+     "heelWidthMm": 74.3
+    },
+    {
+     "size": 45,
+     "lengthMm": 301.0,
+     "ballWidthMm": 108.0,
+     "instepHeightMm": 75.2,
+     "heelWidthMm": 76.1
+    },
+    {
+     "size": 46,
+     "lengthMm": 309.0,
+     "ballWidthMm": 111.3,
+     "instepHeightMm": 77.3,
+     "heelWidthMm": 78.3
+    },
+    {
+     "size": 47,
+     "lengthMm": 313.4,
+     "ballWidthMm": 113.1,
+     "instepHeightMm": 78.8,
+     "heelWidthMm": 79.1
+    }
+   ]
+  },
+  "ax-clean90": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 36,
+     "lengthMm": 231.6,
+     "ballWidthMm": 81.7,
+     "instepHeightMm": 57.5,
+     "heelWidthMm": 57.1
+    },
+    {
+     "size": 37,
+     "lengthMm": 240.3,
+     "ballWidthMm": 85.3,
+     "instepHeightMm": 59.8,
+     "heelWidthMm": 59.3
+    },
+    {
+     "size": 38,
+     "lengthMm": 246.9,
+     "ballWidthMm": 87.8,
+     "instepHeightMm": 61.8,
+     "heelWidthMm": 61.2
+    },
+    {
+     "size": 39,
+     "lengthMm": 253.2,
+     "ballWidthMm": 89.6,
+     "instepHeightMm": 63.4,
+     "heelWidthMm": 63.0
+    },
+    {
+     "size": 40,
+     "lengthMm": 259.7,
+     "ballWidthMm": 92.4,
+     "instepHeightMm": 64.4,
+     "heelWidthMm": 64.5
+    },
+    {
+     "size": 41,
+     "lengthMm": 266.1,
+     "ballWidthMm": 94.6,
+     "instepHeightMm": 66.6,
+     "heelWidthMm": 66.6
+    },
+    {
+     "size": 42,
+     "lengthMm": 274.4,
+     "ballWidthMm": 98.8,
+     "instepHeightMm": 69.0,
+     "heelWidthMm": 68.4
+    },
+    {
+     "size": 43,
+     "lengthMm": 279.1,
+     "ballWidthMm": 100.0,
+     "instepHeightMm": 70.3,
+     "heelWidthMm": 70.0
+    },
+    {
+     "size": 44,
+     "lengthMm": 287.0,
+     "ballWidthMm": 103.2,
+     "instepHeightMm": 71.9,
+     "heelWidthMm": 72.7
+    },
+    {
+     "size": 45,
+     "lengthMm": 294.0,
+     "ballWidthMm": 105.4,
+     "instepHeightMm": 73.6,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 46,
+     "lengthMm": 299.5,
+     "ballWidthMm": 108.3,
+     "instepHeightMm": 75.9,
+     "heelWidthMm": 76.0
+    }
+   ]
+  },
+  "ax-dice": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 36,
+     "lengthMm": 231.7,
+     "ballWidthMm": 85.4,
+     "instepHeightMm": 57.3,
+     "heelWidthMm": 59.5
+    },
+    {
+     "size": 37,
+     "lengthMm": 240.6,
+     "ballWidthMm": 89.1,
+     "instepHeightMm": 59.7,
+     "heelWidthMm": 61.3
+    },
+    {
+     "size": 38,
+     "lengthMm": 246.9,
+     "ballWidthMm": 91.1,
+     "instepHeightMm": 61.6,
+     "heelWidthMm": 62.8
+    },
+    {
+     "size": 39,
+     "lengthMm": 252.9,
+     "ballWidthMm": 93.6,
+     "instepHeightMm": 62.9,
+     "heelWidthMm": 64.5
+    },
+    {
+     "size": 40,
+     "lengthMm": 259.6,
+     "ballWidthMm": 96.3,
+     "instepHeightMm": 65.1,
+     "heelWidthMm": 66.8
+    },
+    {
+     "size": 41,
+     "lengthMm": 266.3,
+     "ballWidthMm": 98.9,
+     "instepHeightMm": 66.1,
+     "heelWidthMm": 67.9
+    },
+    {
+     "size": 42,
+     "lengthMm": 274.0,
+     "ballWidthMm": 102.5,
+     "instepHeightMm": 68.7,
+     "heelWidthMm": 70.4
+    },
+    {
+     "size": 43,
+     "lengthMm": 279.0,
+     "ballWidthMm": 104.3,
+     "instepHeightMm": 69.5,
+     "heelWidthMm": 71.1
+    },
+    {
+     "size": 44,
+     "lengthMm": 287.6,
+     "ballWidthMm": 107.3,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 45,
+     "lengthMm": 293.3,
+     "ballWidthMm": 110.3,
+     "instepHeightMm": 73.3,
+     "heelWidthMm": 75.7
+    },
+    {
+     "size": 46,
+     "lengthMm": 299.9,
+     "ballWidthMm": 112.3,
+     "instepHeightMm": 75.5,
+     "heelWidthMm": 77.2
+    }
+   ]
+  },
+  "ax-genesis": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 36,
+     "lengthMm": 231.7,
+     "ballWidthMm": 85.7,
+     "instepHeightMm": 58.0,
+     "heelWidthMm": 59.2
+    },
+    {
+     "size": 37,
+     "lengthMm": 240.3,
+     "ballWidthMm": 89.6,
+     "instepHeightMm": 59.4,
+     "heelWidthMm": 61.2
+    },
+    {
+     "size": 38,
+     "lengthMm": 246.7,
+     "ballWidthMm": 91.5,
+     "instepHeightMm": 61.7,
+     "heelWidthMm": 62.9
+    },
+    {
+     "size": 39,
+     "lengthMm": 253.4,
+     "ballWidthMm": 94.2,
+     "instepHeightMm": 63.0,
+     "heelWidthMm": 64.8
+    },
+    {
+     "size": 40,
+     "lengthMm": 260.0,
+     "ballWidthMm": 96.9,
+     "instepHeightMm": 65.2,
+     "heelWidthMm": 66.6
+    },
+    {
+     "size": 41,
+     "lengthMm": 265.6,
+     "ballWidthMm": 99.2,
+     "instepHeightMm": 66.6,
+     "heelWidthMm": 68.4
+    },
+    {
+     "size": 42,
+     "lengthMm": 274.8,
+     "ballWidthMm": 102.3,
+     "instepHeightMm": 69.0,
+     "heelWidthMm": 70.5
+    },
+    {
+     "size": 43,
+     "lengthMm": 278.5,
+     "ballWidthMm": 103.8,
+     "instepHeightMm": 69.7,
+     "heelWidthMm": 71.5
+    },
+    {
+     "size": 44,
+     "lengthMm": 287.6,
+     "ballWidthMm": 107.5,
+     "instepHeightMm": 71.8,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 45,
+     "lengthMm": 293.2,
+     "ballWidthMm": 109.8,
+     "instepHeightMm": 73.6,
+     "heelWidthMm": 75.5
+    },
+    {
+     "size": 46,
+     "lengthMm": 300.3,
+     "ballWidthMm": 112.5,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 76.8
+    }
+   ]
+  },
+  "au-medalist-m": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 39,
+     "lengthMm": 253.0,
+     "ballWidthMm": 94.4,
+     "instepHeightMm": 63.5,
+     "heelWidthMm": 65.1
+    },
+    {
+     "size": 40,
+     "lengthMm": 260.0,
+     "ballWidthMm": 96.4,
+     "instepHeightMm": 65.2,
+     "heelWidthMm": 66.1
+    },
+    {
+     "size": 41,
+     "lengthMm": 265.8,
+     "ballWidthMm": 98.8,
+     "instepHeightMm": 66.8,
+     "heelWidthMm": 68.1
+    },
+    {
+     "size": 42,
+     "lengthMm": 274.2,
+     "ballWidthMm": 102.1,
+     "instepHeightMm": 69.1,
+     "heelWidthMm": 70.1
+    },
+    {
+     "size": 43,
+     "lengthMm": 278.3,
+     "ballWidthMm": 104.2,
+     "instepHeightMm": 70.4,
+     "heelWidthMm": 71.5
+    },
+    {
+     "size": 44,
+     "lengthMm": 287.1,
+     "ballWidthMm": 107.1,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 73.9
+    },
+    {
+     "size": 45,
+     "lengthMm": 293.5,
+     "ballWidthMm": 110.1,
+     "instepHeightMm": 73.3,
+     "heelWidthMm": 75.5
+    },
+    {
+     "size": 46,
+     "lengthMm": 299.4,
+     "ballWidthMm": 112.2,
+     "instepHeightMm": 75.8,
+     "heelWidthMm": 77.5
+    }
+   ]
+  },
+  "au-medalist-w": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 35,
+     "lengthMm": 227.6,
+     "ballWidthMm": 84.6,
+     "instepHeightMm": 56.2,
+     "heelWidthMm": 57.9
+    },
+    {
+     "size": 36,
+     "lengthMm": 231.9,
+     "ballWidthMm": 86.2,
+     "instepHeightMm": 58.1,
+     "heelWidthMm": 58.9
+    },
+    {
+     "size": 37,
+     "lengthMm": 240.4,
+     "ballWidthMm": 89.3,
+     "instepHeightMm": 59.7,
+     "heelWidthMm": 61.0
+    },
+    {
+     "size": 38,
+     "lengthMm": 247.4,
+     "ballWidthMm": 92.1,
+     "instepHeightMm": 61.9,
+     "heelWidthMm": 62.8
+    },
+    {
+     "size": 39,
+     "lengthMm": 253.6,
+     "ballWidthMm": 94.0,
+     "instepHeightMm": 63.0,
+     "heelWidthMm": 64.8
+    },
+    {
+     "size": 40,
+     "lengthMm": 259.4,
+     "ballWidthMm": 96.6,
+     "instepHeightMm": 64.4,
+     "heelWidthMm": 66.0
+    },
+    {
+     "size": 41,
+     "lengthMm": 265.7,
+     "ballWidthMm": 99.5,
+     "instepHeightMm": 66.6,
+     "heelWidthMm": 68.2
+    }
+   ]
+  },
+  "au-platform-w": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 35,
+     "lengthMm": 227.7,
+     "ballWidthMm": 84.4,
+     "instepHeightMm": 56.2,
+     "heelWidthMm": 57.8
+    },
+    {
+     "size": 36,
+     "lengthMm": 231.8,
+     "ballWidthMm": 85.8,
+     "instepHeightMm": 58.1,
+     "heelWidthMm": 58.5
+    },
+    {
+     "size": 37,
+     "lengthMm": 240.9,
+     "ballWidthMm": 89.3,
+     "instepHeightMm": 60.3,
+     "heelWidthMm": 61.7
+    },
+    {
+     "size": 38,
+     "lengthMm": 247.3,
+     "ballWidthMm": 92.1,
+     "instepHeightMm": 61.9,
+     "heelWidthMm": 62.8
+    },
+    {
+     "size": 39,
+     "lengthMm": 252.9,
+     "ballWidthMm": 93.9,
+     "instepHeightMm": 63.5,
+     "heelWidthMm": 65.0
+    },
+    {
+     "size": 40,
+     "lengthMm": 260.1,
+     "ballWidthMm": 96.7,
+     "instepHeightMm": 64.6,
+     "heelWidthMm": 66.6
+    },
+    {
+     "size": 41,
+     "lengthMm": 266.1,
+     "ballWidthMm": 99.5,
+     "instepHeightMm": 66.1,
+     "heelWidthMm": 67.9
+    }
+   ]
+  },
+  "vb-service-2030": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 258.5,
+     "ballWidthMm": 95.7,
+     "instepHeightMm": 64.1,
+     "heelWidthMm": 65.6
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 263.0,
+     "ballWidthMm": 97.2,
+     "instepHeightMm": 65.6,
+     "heelWidthMm": 67.3
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 266.7,
+     "ballWidthMm": 99.2,
+     "instepHeightMm": 66.4,
+     "heelWidthMm": 68.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 271.3,
+     "ballWidthMm": 100.7,
+     "instepHeightMm": 68.1,
+     "heelWidthMm": 69.5
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 275.9,
+     "ballWidthMm": 102.8,
+     "instepHeightMm": 68.9,
+     "heelWidthMm": 70.4
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 279.4,
+     "ballWidthMm": 103.8,
+     "instepHeightMm": 69.6,
+     "heelWidthMm": 72.0
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 283.5,
+     "ballWidthMm": 105.4,
+     "instepHeightMm": 71.4,
+     "heelWidthMm": 72.3
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 288.3,
+     "ballWidthMm": 107.4,
+     "instepHeightMm": 72.3,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 292.1,
+     "ballWidthMm": 108.9,
+     "instepHeightMm": 73.0,
+     "heelWidthMm": 74.4
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 296.7,
+     "ballWidthMm": 110.6,
+     "instepHeightMm": 74.4,
+     "heelWidthMm": 75.6
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 300.7,
+     "ballWidthMm": 112.3,
+     "instepHeightMm": 75.6,
+     "heelWidthMm": 77.3
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 305.2,
+     "ballWidthMm": 114.1,
+     "instepHeightMm": 76.3,
+     "heelWidthMm": 78.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 309.3,
+     "ballWidthMm": 115.9,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 78.9
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 313.2,
+     "ballWidthMm": 117.7,
+     "instepHeightMm": 78.9,
+     "heelWidthMm": 80.7
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 317.4,
+     "ballWidthMm": 119.0,
+     "instepHeightMm": 80.2,
+     "heelWidthMm": 81.9
+    }
+   ]
+  },
+  "vb-service-1035": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 258.8,
+     "ballWidthMm": 101.2,
+     "instepHeightMm": 65.6,
+     "heelWidthMm": 67.5
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 262.9,
+     "ballWidthMm": 102.0,
+     "instepHeightMm": 66.2,
+     "heelWidthMm": 69.4
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 266.8,
+     "ballWidthMm": 104.5,
+     "instepHeightMm": 67.2,
+     "heelWidthMm": 70.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 271.1,
+     "ballWidthMm": 105.8,
+     "instepHeightMm": 68.2,
+     "heelWidthMm": 70.7
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 275.4,
+     "ballWidthMm": 107.5,
+     "instepHeightMm": 69.5,
+     "heelWidthMm": 72.2
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 279.4,
+     "ballWidthMm": 109.4,
+     "instepHeightMm": 70.9,
+     "heelWidthMm": 73.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 283.9,
+     "ballWidthMm": 111.1,
+     "instepHeightMm": 72.1,
+     "heelWidthMm": 74.5
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 288.4,
+     "ballWidthMm": 112.8,
+     "instepHeightMm": 72.7,
+     "heelWidthMm": 75.5
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 291.9,
+     "ballWidthMm": 113.6,
+     "instepHeightMm": 74.2,
+     "heelWidthMm": 76.4
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 297.1,
+     "ballWidthMm": 115.5,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 78.3
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 300.9,
+     "ballWidthMm": 117.1,
+     "instepHeightMm": 76.5,
+     "heelWidthMm": 79.4
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 305.4,
+     "ballWidthMm": 118.9,
+     "instepHeightMm": 77.8,
+     "heelWidthMm": 80.0
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 309.7,
+     "ballWidthMm": 121.0,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 81.8
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 313.6,
+     "ballWidthMm": 122.3,
+     "instepHeightMm": 80.2,
+     "heelWidthMm": 82.9
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 317.4,
+     "ballWidthMm": 124.3,
+     "instepHeightMm": 80.4,
+     "heelWidthMm": 83.9
+    }
+   ]
+  },
+  "vb-service-6748": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 258.0,
+     "ballWidthMm": 95.5,
+     "instepHeightMm": 62.0,
+     "heelWidthMm": 64.2
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 262.9,
+     "ballWidthMm": 97.2,
+     "instepHeightMm": 63.8,
+     "heelWidthMm": 65.3
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 266.8,
+     "ballWidthMm": 98.6,
+     "instepHeightMm": 64.6,
+     "heelWidthMm": 65.7
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 271.5,
+     "ballWidthMm": 100.3,
+     "instepHeightMm": 65.6,
+     "heelWidthMm": 66.9
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 275.7,
+     "ballWidthMm": 102.6,
+     "instepHeightMm": 67.0,
+     "heelWidthMm": 68.7
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 279.7,
+     "ballWidthMm": 104.0,
+     "instepHeightMm": 68.1,
+     "heelWidthMm": 69.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 283.9,
+     "ballWidthMm": 105.9,
+     "instepHeightMm": 69.0,
+     "heelWidthMm": 70.7
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 287.9,
+     "ballWidthMm": 107.0,
+     "instepHeightMm": 70.5,
+     "heelWidthMm": 72.2
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 292.8,
+     "ballWidthMm": 108.8,
+     "instepHeightMm": 70.7,
+     "heelWidthMm": 72.6
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 297.0,
+     "ballWidthMm": 110.5,
+     "instepHeightMm": 72.1,
+     "heelWidthMm": 73.8
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 301.0,
+     "ballWidthMm": 112.2,
+     "instepHeightMm": 73.0,
+     "heelWidthMm": 75.4
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 305.6,
+     "ballWidthMm": 114.1,
+     "instepHeightMm": 74.1,
+     "heelWidthMm": 76.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 309.0,
+     "ballWidthMm": 115.4,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 77.3
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 313.6,
+     "ballWidthMm": 117.1,
+     "instepHeightMm": 77.0,
+     "heelWidthMm": 78.1
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 318.1,
+     "ballWidthMm": 118.7,
+     "instepHeightMm": 78.3,
+     "heelWidthMm": 79.4
+    }
+   ]
+  },
+  "vb-hiker-240": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 258.5,
+     "ballWidthMm": 101.2,
+     "instepHeightMm": 67.3,
+     "heelWidthMm": 69.2
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 262.3,
+     "ballWidthMm": 102.6,
+     "instepHeightMm": 68.1,
+     "heelWidthMm": 70.4
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 267.4,
+     "ballWidthMm": 104.3,
+     "instepHeightMm": 69.8,
+     "heelWidthMm": 71.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 270.9,
+     "ballWidthMm": 106.1,
+     "instepHeightMm": 70.3,
+     "heelWidthMm": 72.0
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 275.3,
+     "ballWidthMm": 107.8,
+     "instepHeightMm": 71.6,
+     "heelWidthMm": 73.3
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 280.1,
+     "ballWidthMm": 109.4,
+     "instepHeightMm": 72.6,
+     "heelWidthMm": 74.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 284.4,
+     "ballWidthMm": 110.2,
+     "instepHeightMm": 73.6,
+     "heelWidthMm": 75.9
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 288.5,
+     "ballWidthMm": 111.9,
+     "instepHeightMm": 75.1,
+     "heelWidthMm": 76.3
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 292.3,
+     "ballWidthMm": 114.0,
+     "instepHeightMm": 75.7,
+     "heelWidthMm": 77.8
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 296.3,
+     "ballWidthMm": 115.6,
+     "instepHeightMm": 77.5,
+     "heelWidthMm": 78.8
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 301.4,
+     "ballWidthMm": 117.1,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 80.1
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 305.3,
+     "ballWidthMm": 118.9,
+     "instepHeightMm": 79.8,
+     "heelWidthMm": 80.8
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 309.1,
+     "ballWidthMm": 120.7,
+     "instepHeightMm": 80.6,
+     "heelWidthMm": 82.3
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 313.8,
+     "ballWidthMm": 122.6,
+     "instepHeightMm": 81.9,
+     "heelWidthMm": 83.2
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 317.7,
+     "ballWidthMm": 123.6,
+     "instepHeightMm": 82.9,
+     "heelWidthMm": 84.4
+    }
+   ]
+  },
+  "cj-audley": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 255.2,
+     "ballWidthMm": 93.7,
+     "instepHeightMm": 63.1,
+     "heelWidthMm": 65.1
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 259.7,
+     "ballWidthMm": 95.9,
+     "instepHeightMm": 64.8,
+     "heelWidthMm": 65.4
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 264.3,
+     "ballWidthMm": 97.0,
+     "instepHeightMm": 65.0,
+     "heelWidthMm": 66.8
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 267.8,
+     "ballWidthMm": 99.3,
+     "instepHeightMm": 66.8,
+     "heelWidthMm": 68.1
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 271.8,
+     "ballWidthMm": 100.7,
+     "instepHeightMm": 67.5,
+     "heelWidthMm": 69.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 276.0,
+     "ballWidthMm": 102.0,
+     "instepHeightMm": 68.8,
+     "heelWidthMm": 70.0
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 281.2,
+     "ballWidthMm": 104.0,
+     "instepHeightMm": 69.8,
+     "heelWidthMm": 71.1
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 285.0,
+     "ballWidthMm": 105.8,
+     "instepHeightMm": 70.6,
+     "heelWidthMm": 72.2
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 289.2,
+     "ballWidthMm": 107.0,
+     "instepHeightMm": 72.4,
+     "heelWidthMm": 73.8
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 293.2,
+     "ballWidthMm": 109.3,
+     "instepHeightMm": 72.8,
+     "heelWidthMm": 74.9
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 297.8,
+     "ballWidthMm": 110.9,
+     "instepHeightMm": 74.3,
+     "heelWidthMm": 75.6
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 301.5,
+     "ballWidthMm": 112.4,
+     "instepHeightMm": 75.5,
+     "heelWidthMm": 76.9
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 305.8,
+     "ballWidthMm": 114.0,
+     "instepHeightMm": 76.5,
+     "heelWidthMm": 78.7
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 310.0,
+     "ballWidthMm": 115.3,
+     "instepHeightMm": 78.0,
+     "heelWidthMm": 79.6
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 314.8,
+     "ballWidthMm": 117.0,
+     "instepHeightMm": 78.3,
+     "heelWidthMm": 80.9
+    }
+   ]
+  },
+  "cj-cavendish": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 252.5,
+     "ballWidthMm": 93.9,
+     "instepHeightMm": 62.2,
+     "heelWidthMm": 64.2
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 256.3,
+     "ballWidthMm": 96.0,
+     "instepHeightMm": 63.5,
+     "heelWidthMm": 66.3
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 260.6,
+     "ballWidthMm": 97.0,
+     "instepHeightMm": 64.7,
+     "heelWidthMm": 67.3
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 265.2,
+     "ballWidthMm": 98.9,
+     "instepHeightMm": 65.5,
+     "heelWidthMm": 68.6
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 268.8,
+     "ballWidthMm": 100.3,
+     "instepHeightMm": 66.2,
+     "heelWidthMm": 68.8
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 273.7,
+     "ballWidthMm": 102.5,
+     "instepHeightMm": 67.3,
+     "heelWidthMm": 70.4
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 278.2,
+     "ballWidthMm": 104.4,
+     "instepHeightMm": 69.1,
+     "heelWidthMm": 71.1
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 281.7,
+     "ballWidthMm": 105.4,
+     "instepHeightMm": 70.4,
+     "heelWidthMm": 72.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 286.2,
+     "ballWidthMm": 107.6,
+     "instepHeightMm": 70.8,
+     "heelWidthMm": 73.3
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 290.5,
+     "ballWidthMm": 108.8,
+     "instepHeightMm": 71.8,
+     "heelWidthMm": 75.2
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 294.5,
+     "ballWidthMm": 111.0,
+     "instepHeightMm": 73.5,
+     "heelWidthMm": 76.4
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 298.5,
+     "ballWidthMm": 112.7,
+     "instepHeightMm": 74.6,
+     "heelWidthMm": 77.6
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 303.4,
+     "ballWidthMm": 114.1,
+     "instepHeightMm": 75.4,
+     "heelWidthMm": 78.2
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 306.9,
+     "ballWidthMm": 115.2,
+     "instepHeightMm": 76.3,
+     "heelWidthMm": 79.8
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 311.6,
+     "ballWidthMm": 117.2,
+     "instepHeightMm": 77.7,
+     "heelWidthMm": 80.3
+    }
+   ]
+  },
+  "cj-coniston": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 254.5,
+     "ballWidthMm": 94.0,
+     "instepHeightMm": 63.7,
+     "heelWidthMm": 64.7
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 258.3,
+     "ballWidthMm": 95.7,
+     "instepHeightMm": 64.3,
+     "heelWidthMm": 65.5
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 262.3,
+     "ballWidthMm": 97.9,
+     "instepHeightMm": 65.5,
+     "heelWidthMm": 67.0
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 267.5,
+     "ballWidthMm": 99.1,
+     "instepHeightMm": 66.5,
+     "heelWidthMm": 67.7
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 270.9,
+     "ballWidthMm": 100.3,
+     "instepHeightMm": 67.5,
+     "heelWidthMm": 69.6
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 275.3,
+     "ballWidthMm": 101.9,
+     "instepHeightMm": 68.7,
+     "heelWidthMm": 70.8
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 279.9,
+     "ballWidthMm": 104.0,
+     "instepHeightMm": 69.7,
+     "heelWidthMm": 71.6
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 283.5,
+     "ballWidthMm": 105.8,
+     "instepHeightMm": 71.2,
+     "heelWidthMm": 72.8
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 287.9,
+     "ballWidthMm": 107.4,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 73.3
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 292.1,
+     "ballWidthMm": 108.6,
+     "instepHeightMm": 73.5,
+     "heelWidthMm": 75.2
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 296.5,
+     "ballWidthMm": 110.7,
+     "instepHeightMm": 74.6,
+     "heelWidthMm": 75.8
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 300.7,
+     "ballWidthMm": 112.0,
+     "instepHeightMm": 75.2,
+     "heelWidthMm": 77.4
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 305.5,
+     "ballWidthMm": 113.8,
+     "instepHeightMm": 76.4,
+     "heelWidthMm": 78.0
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 309.1,
+     "ballWidthMm": 115.2,
+     "instepHeightMm": 77.7,
+     "heelWidthMm": 79.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 313.8,
+     "ballWidthMm": 117.6,
+     "instepHeightMm": 79.2,
+     "heelWidthMm": 80.2
+    }
+   ]
+  },
+  "cj-chelsea": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 254.2,
+     "ballWidthMm": 93.7,
+     "instepHeightMm": 63.6,
+     "heelWidthMm": 65.1
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 258.0,
+     "ballWidthMm": 96.0,
+     "instepHeightMm": 64.8,
+     "heelWidthMm": 65.7
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 263.0,
+     "ballWidthMm": 97.2,
+     "instepHeightMm": 65.0,
+     "heelWidthMm": 67.2
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 267.0,
+     "ballWidthMm": 98.7,
+     "instepHeightMm": 66.8,
+     "heelWidthMm": 67.9
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 271.0,
+     "ballWidthMm": 100.6,
+     "instepHeightMm": 68.0,
+     "heelWidthMm": 69.6
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 275.5,
+     "ballWidthMm": 102.6,
+     "instepHeightMm": 68.6,
+     "heelWidthMm": 70.3
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 280.1,
+     "ballWidthMm": 104.3,
+     "instepHeightMm": 69.9,
+     "heelWidthMm": 71.4
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 284.4,
+     "ballWidthMm": 105.2,
+     "instepHeightMm": 71.4,
+     "heelWidthMm": 73.0
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 288.7,
+     "ballWidthMm": 107.8,
+     "instepHeightMm": 71.8,
+     "heelWidthMm": 73.5
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 292.7,
+     "ballWidthMm": 108.7,
+     "instepHeightMm": 73.7,
+     "heelWidthMm": 75.0
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 297.0,
+     "ballWidthMm": 110.8,
+     "instepHeightMm": 73.9,
+     "heelWidthMm": 76.3
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 301.3,
+     "ballWidthMm": 112.6,
+     "instepHeightMm": 75.6,
+     "heelWidthMm": 77.3
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 305.4,
+     "ballWidthMm": 113.8,
+     "instepHeightMm": 76.4,
+     "heelWidthMm": 77.9
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 309.4,
+     "ballWidthMm": 115.3,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 79.5
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 313.7,
+     "ballWidthMm": 117.5,
+     "instepHeightMm": 79.1,
+     "heelWidthMm": 80.3
+    }
+   ]
+  },
+  "al-indy": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 254.4,
+     "ballWidthMm": 94.5,
+     "instepHeightMm": 62.8,
+     "heelWidthMm": 64.5
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 258.4,
+     "ballWidthMm": 95.7,
+     "instepHeightMm": 63.9,
+     "heelWidthMm": 65.3
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 262.7,
+     "ballWidthMm": 97.6,
+     "instepHeightMm": 65.8,
+     "heelWidthMm": 67.4
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 267.1,
+     "ballWidthMm": 98.6,
+     "instepHeightMm": 66.9,
+     "heelWidthMm": 67.6
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 271.3,
+     "ballWidthMm": 101.1,
+     "instepHeightMm": 67.6,
+     "heelWidthMm": 69.2
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 275.6,
+     "ballWidthMm": 102.0,
+     "instepHeightMm": 68.6,
+     "heelWidthMm": 70.8
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 279.7,
+     "ballWidthMm": 103.8,
+     "instepHeightMm": 69.6,
+     "heelWidthMm": 71.5
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 284.0,
+     "ballWidthMm": 105.5,
+     "instepHeightMm": 71.2,
+     "heelWidthMm": 72.5
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 287.7,
+     "ballWidthMm": 107.1,
+     "instepHeightMm": 71.8,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 292.5,
+     "ballWidthMm": 109.2,
+     "instepHeightMm": 73.3,
+     "heelWidthMm": 74.4
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 296.3,
+     "ballWidthMm": 110.8,
+     "instepHeightMm": 74.8,
+     "heelWidthMm": 76.1
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 301.2,
+     "ballWidthMm": 112.2,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 77.5
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 304.6,
+     "ballWidthMm": 113.7,
+     "instepHeightMm": 76.8,
+     "heelWidthMm": 78.2
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 308.9,
+     "ballWidthMm": 115.4,
+     "instepHeightMm": 77.9,
+     "heelWidthMm": 79.2
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 313.1,
+     "ballWidthMm": 116.9,
+     "instepHeightMm": 78.8,
+     "heelWidthMm": 80.5
+    }
+   ]
+  },
+  "al-990": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 255.7,
+     "ballWidthMm": 98.9,
+     "instepHeightMm": 64.6,
+     "heelWidthMm": 66.7
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 260.0,
+     "ballWidthMm": 101.0,
+     "instepHeightMm": 65.1,
+     "heelWidthMm": 67.6
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 263.5,
+     "ballWidthMm": 102.1,
+     "instepHeightMm": 66.1,
+     "heelWidthMm": 68.6
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 267.8,
+     "ballWidthMm": 103.6,
+     "instepHeightMm": 68.0,
+     "heelWidthMm": 70.6
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 272.5,
+     "ballWidthMm": 105.7,
+     "instepHeightMm": 68.9,
+     "heelWidthMm": 71.6
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 276.1,
+     "ballWidthMm": 107.5,
+     "instepHeightMm": 69.3,
+     "heelWidthMm": 72.1
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 281.2,
+     "ballWidthMm": 108.9,
+     "instepHeightMm": 70.9,
+     "heelWidthMm": 73.8
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 285.2,
+     "ballWidthMm": 110.5,
+     "instepHeightMm": 71.6,
+     "heelWidthMm": 74.6
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 289.1,
+     "ballWidthMm": 112.4,
+     "instepHeightMm": 72.7,
+     "heelWidthMm": 75.3
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 293.6,
+     "ballWidthMm": 113.5,
+     "instepHeightMm": 73.9,
+     "heelWidthMm": 76.9
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 297.3,
+     "ballWidthMm": 115.1,
+     "instepHeightMm": 75.7,
+     "heelWidthMm": 78.3
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 301.7,
+     "ballWidthMm": 117.3,
+     "instepHeightMm": 76.0,
+     "heelWidthMm": 79.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 305.6,
+     "ballWidthMm": 118.9,
+     "instepHeightMm": 77.8,
+     "heelWidthMm": 80.7
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 310.1,
+     "ballWidthMm": 120.6,
+     "instepHeightMm": 78.2,
+     "heelWidthMm": 80.9
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 314.3,
+     "ballWidthMm": 122.7,
+     "instepHeightMm": 79.8,
+     "heelWidthMm": 82.4
+    }
+   ]
+  },
+  "al-van": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 256.2,
+     "ballWidthMm": 95.9,
+     "instepHeightMm": 63.0,
+     "heelWidthMm": 65.9
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 261.0,
+     "ballWidthMm": 97.2,
+     "instepHeightMm": 64.5,
+     "heelWidthMm": 67.4
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 265.0,
+     "ballWidthMm": 98.7,
+     "instepHeightMm": 65.9,
+     "heelWidthMm": 67.7
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 269.2,
+     "ballWidthMm": 101.1,
+     "instepHeightMm": 67.1,
+     "heelWidthMm": 69.6
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 273.9,
+     "ballWidthMm": 102.4,
+     "instepHeightMm": 67.4,
+     "heelWidthMm": 70.4
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 277.7,
+     "ballWidthMm": 104.2,
+     "instepHeightMm": 69.3,
+     "heelWidthMm": 71.3
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 282.0,
+     "ballWidthMm": 105.8,
+     "instepHeightMm": 70.2,
+     "heelWidthMm": 72.9
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 285.9,
+     "ballWidthMm": 107.0,
+     "instepHeightMm": 71.1,
+     "heelWidthMm": 73.6
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 290.9,
+     "ballWidthMm": 108.6,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 74.9
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 294.4,
+     "ballWidthMm": 111.0,
+     "instepHeightMm": 73.7,
+     "heelWidthMm": 76.1
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 299.1,
+     "ballWidthMm": 111.9,
+     "instepHeightMm": 74.6,
+     "heelWidthMm": 77.4
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 303.4,
+     "ballWidthMm": 114.2,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 78.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 306.9,
+     "ballWidthMm": 115.3,
+     "instepHeightMm": 77.0,
+     "heelWidthMm": 79.5
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 311.8,
+     "ballWidthMm": 117.7,
+     "instepHeightMm": 78.0,
+     "heelWidthMm": 80.4
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 315.7,
+     "ballWidthMm": 118.4,
+     "instepHeightMm": 78.6,
+     "heelWidthMm": 81.5
+    }
+   ]
+  },
+  "al-chukka": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 6,
+     "lengthMm": 254.2,
+     "ballWidthMm": 98.9,
+     "instepHeightMm": 63.5,
+     "heelWidthMm": 66.6
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 258.7,
+     "ballWidthMm": 100.6,
+     "instepHeightMm": 64.4,
+     "heelWidthMm": 67.5
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 262.9,
+     "ballWidthMm": 102.8,
+     "instepHeightMm": 65.6,
+     "heelWidthMm": 68.7
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 267.3,
+     "ballWidthMm": 104.2,
+     "instepHeightMm": 66.7,
+     "heelWidthMm": 69.8
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 271.0,
+     "ballWidthMm": 105.2,
+     "instepHeightMm": 67.3,
+     "heelWidthMm": 70.7
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 275.7,
+     "ballWidthMm": 107.7,
+     "instepHeightMm": 68.3,
+     "heelWidthMm": 72.8
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 279.9,
+     "ballWidthMm": 108.8,
+     "instepHeightMm": 70.1,
+     "heelWidthMm": 73.9
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 284.1,
+     "ballWidthMm": 111.0,
+     "instepHeightMm": 71.2,
+     "heelWidthMm": 74.9
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 288.1,
+     "ballWidthMm": 112.7,
+     "instepHeightMm": 72.1,
+     "heelWidthMm": 76.2
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 292.3,
+     "ballWidthMm": 114.4,
+     "instepHeightMm": 72.8,
+     "heelWidthMm": 76.5
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 296.1,
+     "ballWidthMm": 115.2,
+     "instepHeightMm": 74.2,
+     "heelWidthMm": 77.7
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 300.9,
+     "ballWidthMm": 117.6,
+     "instepHeightMm": 75.9,
+     "heelWidthMm": 79.3
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 305.5,
+     "ballWidthMm": 119.3,
+     "instepHeightMm": 76.2,
+     "heelWidthMm": 80.4
+    },
+    {
+     "size": 12.5,
+     "lengthMm": 309.1,
+     "ballWidthMm": 120.1,
+     "instepHeightMm": 77.4,
+     "heelWidthMm": 81.7
+    },
+    {
+     "size": 13.0,
+     "lengthMm": 313.4,
+     "ballWidthMm": 122.0,
+     "instepHeightMm": 78.6,
+     "heelWidthMm": 82.3
+    }
+   ]
+  },
+  "eg-chelsea": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 255.3,
+     "ballWidthMm": 94.6,
+     "instepHeightMm": 63.2,
+     "heelWidthMm": 65.0
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 259.5,
+     "ballWidthMm": 95.4,
+     "instepHeightMm": 64.8,
+     "heelWidthMm": 65.8
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 263.7,
+     "ballWidthMm": 97.9,
+     "instepHeightMm": 65.1,
+     "heelWidthMm": 67.0
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 268.0,
+     "ballWidthMm": 99.2,
+     "instepHeightMm": 66.2,
+     "heelWidthMm": 67.8
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 271.7,
+     "ballWidthMm": 101.0,
+     "instepHeightMm": 67.7,
+     "heelWidthMm": 69.6
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 276.3,
+     "ballWidthMm": 102.3,
+     "instepHeightMm": 68.9,
+     "heelWidthMm": 70.5
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 280.8,
+     "ballWidthMm": 103.6,
+     "instepHeightMm": 70.1,
+     "heelWidthMm": 71.9
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 285.1,
+     "ballWidthMm": 105.7,
+     "instepHeightMm": 71.1,
+     "heelWidthMm": 72.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 288.8,
+     "ballWidthMm": 107.5,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 73.9
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 293.4,
+     "ballWidthMm": 108.9,
+     "instepHeightMm": 72.8,
+     "heelWidthMm": 74.7
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 297.9,
+     "ballWidthMm": 110.7,
+     "instepHeightMm": 74.8,
+     "heelWidthMm": 76.5
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 302.2,
+     "ballWidthMm": 112.7,
+     "instepHeightMm": 75.2,
+     "heelWidthMm": 77.6
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 306.3,
+     "ballWidthMm": 113.7,
+     "instepHeightMm": 76.9,
+     "heelWidthMm": 78.0
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 310.3,
+     "ballWidthMm": 115.4,
+     "instepHeightMm": 78.1,
+     "heelWidthMm": 79.1
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 314.1,
+     "ballWidthMm": 117.7,
+     "instepHeightMm": 78.3,
+     "heelWidthMm": 80.2
+    }
+   ]
+  },
+  "eg-dover": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 255.6,
+     "ballWidthMm": 94.0,
+     "instepHeightMm": 63.3,
+     "heelWidthMm": 65.1
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 259.8,
+     "ballWidthMm": 96.1,
+     "instepHeightMm": 64.2,
+     "heelWidthMm": 65.9
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 264.3,
+     "ballWidthMm": 97.8,
+     "instepHeightMm": 65.6,
+     "heelWidthMm": 67.2
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 268.4,
+     "ballWidthMm": 98.9,
+     "instepHeightMm": 66.5,
+     "heelWidthMm": 68.4
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 272.4,
+     "ballWidthMm": 101.1,
+     "instepHeightMm": 68.1,
+     "heelWidthMm": 69.0
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 276.6,
+     "ballWidthMm": 102.0,
+     "instepHeightMm": 68.5,
+     "heelWidthMm": 70.2
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 280.8,
+     "ballWidthMm": 104.0,
+     "instepHeightMm": 69.4,
+     "heelWidthMm": 71.1
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 284.9,
+     "ballWidthMm": 106.0,
+     "instepHeightMm": 71.2,
+     "heelWidthMm": 72.4
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 289.5,
+     "ballWidthMm": 107.6,
+     "instepHeightMm": 72.0,
+     "heelWidthMm": 73.7
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 293.4,
+     "ballWidthMm": 108.6,
+     "instepHeightMm": 73.1,
+     "heelWidthMm": 74.5
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 297.9,
+     "ballWidthMm": 110.6,
+     "instepHeightMm": 74.1,
+     "heelWidthMm": 75.9
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 302.1,
+     "ballWidthMm": 111.9,
+     "instepHeightMm": 75.8,
+     "heelWidthMm": 76.8
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 305.6,
+     "ballWidthMm": 113.8,
+     "instepHeightMm": 76.5,
+     "heelWidthMm": 78.4
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 310.1,
+     "ballWidthMm": 115.6,
+     "instepHeightMm": 77.5,
+     "heelWidthMm": 79.5
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 314.9,
+     "ballWidthMm": 117.4,
+     "instepHeightMm": 78.8,
+     "heelWidthMm": 80.5
+    }
+   ]
+  },
+  "eg-piccadilly": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 256.8,
+     "ballWidthMm": 96.0,
+     "instepHeightMm": 63.5,
+     "heelWidthMm": 66.2
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 260.7,
+     "ballWidthMm": 97.0,
+     "instepHeightMm": 64.1,
+     "heelWidthMm": 67.1
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 265.3,
+     "ballWidthMm": 98.7,
+     "instepHeightMm": 65.8,
+     "heelWidthMm": 68.1
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 269.5,
+     "ballWidthMm": 101.2,
+     "instepHeightMm": 66.6,
+     "heelWidthMm": 69.3
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 274.0,
+     "ballWidthMm": 102.7,
+     "instepHeightMm": 68.2,
+     "heelWidthMm": 70.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 277.8,
+     "ballWidthMm": 104.0,
+     "instepHeightMm": 68.9,
+     "heelWidthMm": 71.7
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 282.0,
+     "ballWidthMm": 105.9,
+     "instepHeightMm": 69.7,
+     "heelWidthMm": 72.8
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 286.3,
+     "ballWidthMm": 107.1,
+     "instepHeightMm": 71.3,
+     "heelWidthMm": 73.7
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 290.6,
+     "ballWidthMm": 109.2,
+     "instepHeightMm": 72.7,
+     "heelWidthMm": 74.9
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 294.9,
+     "ballWidthMm": 110.3,
+     "instepHeightMm": 72.9,
+     "heelWidthMm": 75.8
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 298.9,
+     "ballWidthMm": 112.8,
+     "instepHeightMm": 74.8,
+     "heelWidthMm": 77.6
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 303.4,
+     "ballWidthMm": 113.6,
+     "instepHeightMm": 75.3,
+     "heelWidthMm": 78.3
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 307.4,
+     "ballWidthMm": 115.2,
+     "instepHeightMm": 76.7,
+     "heelWidthMm": 79.0
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 311.7,
+     "ballWidthMm": 117.5,
+     "instepHeightMm": 77.8,
+     "heelWidthMm": 80.7
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 315.6,
+     "ballWidthMm": 119.3,
+     "instepHeightMm": 78.5,
+     "heelWidthMm": 81.4
+    }
+   ]
+  },
+  "eg-galway": {
+   "method": "模擬（依楦型參數推算，demo 用）",
+   "sizes": [
+    {
+     "size": 5,
+     "lengthMm": 258.9,
+     "ballWidthMm": 101.2,
+     "instepHeightMm": 65.2,
+     "heelWidthMm": 68.2
+    },
+    {
+     "size": 5.5,
+     "lengthMm": 262.8,
+     "ballWidthMm": 102.6,
+     "instepHeightMm": 66.8,
+     "heelWidthMm": 69.2
+    },
+    {
+     "size": 6.0,
+     "lengthMm": 266.7,
+     "ballWidthMm": 103.8,
+     "instepHeightMm": 68.0,
+     "heelWidthMm": 70.3
+    },
+    {
+     "size": 6.5,
+     "lengthMm": 271.3,
+     "ballWidthMm": 105.6,
+     "instepHeightMm": 69.0,
+     "heelWidthMm": 71.4
+    },
+    {
+     "size": 7.0,
+     "lengthMm": 275.4,
+     "ballWidthMm": 106.9,
+     "instepHeightMm": 70.0,
+     "heelWidthMm": 72.3
+    },
+    {
+     "size": 7.5,
+     "lengthMm": 280.0,
+     "ballWidthMm": 109.0,
+     "instepHeightMm": 70.6,
+     "heelWidthMm": 73.3
+    },
+    {
+     "size": 8.0,
+     "lengthMm": 284.0,
+     "ballWidthMm": 111.0,
+     "instepHeightMm": 71.5,
+     "heelWidthMm": 74.6
+    },
+    {
+     "size": 8.5,
+     "lengthMm": 288.5,
+     "ballWidthMm": 112.5,
+     "instepHeightMm": 72.6,
+     "heelWidthMm": 76.0
+    },
+    {
+     "size": 9.0,
+     "lengthMm": 292.6,
+     "ballWidthMm": 113.6,
+     "instepHeightMm": 74.6,
+     "heelWidthMm": 77.3
+    },
+    {
+     "size": 9.5,
+     "lengthMm": 296.4,
+     "ballWidthMm": 115.8,
+     "instepHeightMm": 75.7,
+     "heelWidthMm": 78.0
+    },
+    {
+     "size": 10.0,
+     "lengthMm": 301.4,
+     "ballWidthMm": 117.0,
+     "instepHeightMm": 76.7,
+     "heelWidthMm": 79.0
+    },
+    {
+     "size": 10.5,
+     "lengthMm": 304.7,
+     "ballWidthMm": 119.1,
+     "instepHeightMm": 77.6,
+     "heelWidthMm": 79.8
+    },
+    {
+     "size": 11.0,
+     "lengthMm": 309.3,
+     "ballWidthMm": 120.1,
+     "instepHeightMm": 79.0,
+     "heelWidthMm": 81.0
+    },
+    {
+     "size": 11.5,
+     "lengthMm": 314.0,
+     "ballWidthMm": 122.7,
+     "instepHeightMm": 80.0,
+     "heelWidthMm": 82.6
+    },
+    {
+     "size": 12.0,
+     "lengthMm": 317.5,
+     "ballWidthMm": 123.7,
+     "instepHeightMm": 81.2,
+     "heelWidthMm": 83.2
+    }
+   ]
+  }
+ }
+}
