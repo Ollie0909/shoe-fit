@@ -14,6 +14,7 @@
 const A4 = { w: 210, h: 297 };
 const RECT_SCALE = 2.4; // 拉正後的圖：每 1 mm 用幾個像素
 const MAX_PHOTO = 1600; // 照片最長邊縮到多少像素再處理
+const PAD = { x: 15, y: 40 }; // 第 3 步除了紙，也拉正紙外左右 15 mm、上下 40 mm（看得到牆和地板）
 
 // ===== 數學：透視轉換 =====
 
@@ -159,8 +160,11 @@ export function detectPaper(canvas) {
   });
 }
 
-/** 依四個角把紙「拉正」成 210 × 297 mm 的正面圖 */
-export function rectify(photo, corners) {
+/**
+ * 依四個角把紙「拉正」成正面圖。pad = 紙外要多包含的範圍（mm），
+ * 例如 { x: 15, y: 40 } 會連紙左右 15 mm、上下 40 mm 的地板和牆一起拉正
+ */
+export function rectify(photo, corners, pad = { x: 0, y: 0 }) {
   // 判斷紙是直放還是橫放：照片中比較長的邊對應 297 mm
   const horiz = (dist(corners[0], corners[1]) + dist(corners[3], corners[2])) / 2;
   const vert = (dist(corners[0], corners[3]) + dist(corners[1], corners[2])) / 2;
@@ -168,8 +172,8 @@ export function rectify(photo, corners) {
   const paper = [[0, 0], [A4.w, 0], [A4.w, A4.h], [0, A4.h]];
   const H = homography(paper, ordered); // 紙上的 mm → 照片像素
 
-  const W = Math.round(A4.w * RECT_SCALE);
-  const Hh = Math.round(A4.h * RECT_SCALE);
+  const W = Math.round((A4.w + 2 * pad.x) * RECT_SCALE);
+  const Hh = Math.round((A4.h + 2 * pad.y) * RECT_SCALE);
   const src = photo.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, photo.width, photo.height);
   const out = document.createElement('canvas');
   out.width = W;
@@ -178,11 +182,14 @@ export function rectify(photo, corners) {
   const img = octx.createImageData(W, Hh);
   for (let y = 0; y < Hh; y++) {
     for (let x = 0; x < W; x++) {
-      const [sx, sy] = project(H, [(x + 0.5) / RECT_SCALE, (y + 0.5) / RECT_SCALE]);
-      const ix = Math.min(photo.width - 1, Math.max(0, Math.round(sx)));
-      const iy = Math.min(photo.height - 1, Math.max(0, Math.round(sy)));
-      const si = (iy * photo.width + ix) * 4;
+      const [sx, sy] = project(H, [(x + 0.5) / RECT_SCALE - pad.x, (y + 0.5) / RECT_SCALE - pad.y]);
       const di = (y * W + x) * 4;
+      if (sx < 0 || sy < 0 || sx > photo.width - 1 || sy > photo.height - 1) {
+        // 超出照片範圍：留透明
+        img.data[di + 3] = 0;
+        continue;
+      }
+      const si = (Math.round(sy) * photo.width + Math.round(sx)) * 4;
       img.data[di] = src.data[si];
       img.data[di + 1] = src.data[si + 1];
       img.data[di + 2] = src.data[si + 2];
@@ -264,6 +271,17 @@ export function detectFoot(rect, debug = null) {
       }
     }
     if (cur && (!best || cur.r - cur.l > best.r - best.l)) best = cur;
+    // 腳的邊緣通常是「慢慢淡出」：從確定是腳的範圍往外延伸，只要還帶一點膚色就算（最多 4 mm）
+    if (best) {
+      const soft = (x) => {
+        const i = (y * W + x) * 4;
+        const [rg] = ratio(px[i], px[i + 1], px[i + 2]);
+        return rg - base[0] > 0.05;
+      };
+      const lim = Math.round(4 * RECT_SCALE);
+      for (let k = 0; k < lim && best.l - 1 >= margin && soft(best.l - 1); k++) best.l--;
+      for (let k = 0; k < lim && best.r + 1 < W - margin && soft(best.r + 1); k++) best.r++;
+    }
     // 太短是雜點；幾乎橫跨整張紙的是紙邊外的地板或牆，也不算
     if (best && best.r - best.l >= minRun && best.r - best.l < (W - 2 * margin) * 0.8) rows[y] = best;
   }
@@ -307,26 +325,91 @@ export function detectFoot(rect, debug = null) {
   const toeRow = rows[toeY];
   const toeX = (toeRow.l + toeRow.r) / 2;
 
-  // 腳寬：只看前掌（從腳尖往回 15%–45% 腳長）
-  let widest = null;
+  // 腳寬：標準量法是「貼著前掌內側、外側的兩條平行線之間的距離」（量腳器就是這樣量）。
+  // 大拇趾根部和小趾根部不在同一高度，所以分別找前掌範圍內最靠內、最靠外的位置，
+  // 而不是只量同一列的寬度。前掌範圍 = 從腳尖往回 12%–45% 腳長
+  let minL = Infinity;
+  let maxR = -Infinity;
   let widestY = toeY;
-  for (let f = 0.15; f <= 0.45; f += 0.5 / lengthPx) {
+  let widestN = -1;
+  for (let f = 0.12; f <= 0.45; f += 0.5 / lengthPx) {
     const y = Math.round(toeY - dir * f * lengthPx);
     const r = rows[y];
-    if (r && (!widest || r.r - r.l > widest.r - widest.l)) {
-      widest = r;
-      widestY = y;
-    }
+    if (!r) continue;
+    minL = Math.min(minL, r.l);
+    maxR = Math.max(maxR, r.r);
+    if (r.r - r.l > widestN) [widestN, widestY] = [r.r - r.l, y];
   }
-  if (!widest) return null;
+  if (!Number.isFinite(minL)) return null;
 
   const mm = (v) => v / RECT_SCALE;
   return {
     heel: [mm(toeX), mm(heelY)],
     toe: [mm(toeX), mm(toeY)],
-    inner: [mm(widest.l), mm(widestY)],
-    outer: [mm(widest.r + 1), mm(widestY)],
+    inner: [mm(minL), mm(widestY)],
+    outer: [mm(maxR + 1), mm(widestY)],
   };
+}
+
+/**
+ * 偵測紙和牆之間有沒有空隙（mm）
+ * 腳跟是貼著牆，不一定貼著紙邊：踩上去時紙可能滑開，或牆邊有踢腳板。
+ * 做法：在紙的腳跟那一端往外看，和紙旁邊的地板顏色一樣的部分就是「露出來的地板」，
+ * 它的寬度就是空隙，要加回腳長。看不清楚時回傳 0（不調整）。
+ * @param ext   含紙外範圍的拉正圖（pad 單位 mm）
+ * @param heelAtTop 腳跟在紙的上緣（y = 0）還是下緣（y = 297）
+ * @param footX 腳的中心位置（mm），小腿會擋在這附近，所以不看這一帶
+ */
+export function detectWallGap(ext, pad, heelAtTop, footX = A4.w / 2) {
+  const W = ext.width;
+  const H = ext.height;
+  const px = ext.getContext('2d', { willReadFrequently: true }).getImageData(0, 0, W, H).data;
+  const S = RECT_SCALE;
+  const at = (xmm, ymm) => {
+    const x = Math.round((xmm + pad.x) * S);
+    const y = Math.round((ymm + pad.y) * S);
+    if (x < 0 || y < 0 || x >= W || y >= H) return null;
+    const i = (y * W + x) * 4;
+    if (px[i + 3] === 0) return null;
+    return [px[i], px[i + 1], px[i + 2]];
+  };
+  const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+
+  // 地板顏色：紙左右兩側、靠腳跟那一端的區域
+  const floorSamples = [];
+  for (let ymm = 0; ymm < 60; ymm += 2) {
+    const y = heelAtTop ? ymm : A4.h - ymm;
+    for (const xmm of [-12, -8, -4, A4.w + 4, A4.w + 8, A4.w + 12]) {
+      const c = at(xmm, y);
+      if (c) floorSamples.push(c);
+    }
+  }
+  if (floorSamples.length < 20) return 0;
+  const med = (k) => floorSamples.map((c) => c[k]).sort((a, b) => a - b)[Math.floor(floorSamples.length / 2)];
+  const floor = [med(0), med(1), med(2)];
+  const paper = at(8, A4.h / 2) || at(A4.w - 8, A4.h / 2) || [240, 240, 240];
+  if (dist(floor, paper) < 45) return 0; // 地板和紙太像，分不出來
+
+  // 在紙的腳跟端外側，逐欄往外看「和地板同色」的長度；小腿擋住的中間那一帶不看
+  const maxGap = pad.y - 4;
+  const gaps = [];
+  for (let xmm = 6; xmm <= A4.w - 6; xmm += 3) {
+    if (Math.abs(xmm - footX) < 62) continue;
+    let g = 0;
+    for (let d = 1.5; d <= maxGap; d += 0.5) {
+      const c = at(xmm, heelAtTop ? -d : A4.h + d);
+      if (!c) break;
+      if (dist(c, floor) < 32) g = d;
+      else break;
+    }
+    gaps.push(g);
+  }
+  if (gaps.length < 8) return 0;
+  gaps.sort((a, b) => a - b);
+  const gap = gaps[Math.floor(gaps.length / 2)];
+  const agree = gaps.filter((g) => Math.abs(g - gap) <= 3).length / gaps.length;
+  if (agree < 0.6 || gap < 2 || gap >= maxGap - 1) return 0;
+  return gap;
 }
 
 /** 讀取照片（依手機拍攝方向轉正），縮到最長邊 1600 px */
@@ -354,8 +437,9 @@ async function loadPhoto(file) {
  * 示範照片：程式畫一張「自己往下拍」的照片——A4 紙短邊貼牆、腳跟靠牆、腳尖朝畫面上方，
  * 小腿從腳跟往畫面下方延伸出紙外。預設腳長 25.5 cm、腳寬 10.0 cm。
  * flip = true 時整張照片轉 180 度（模擬朋友從對面拍，腳尖朝下）
+ * gap = 紙和牆之間的空隙（mm），用來測試「紙沒有貼齊牆」的情況
  */
-export function demoPhoto({ length = 255, width = 100, flip = false } = {}) {
+export function demoPhoto({ length = 255, width = 100, flip = false, gap = 0 } = {}) {
   const c = document.createElement('canvas');
   c.width = 900;
   c.height = 1200;
@@ -379,13 +463,13 @@ export function demoPhoto({ length = 255, width = 100, flip = false } = {}) {
   }
   const corners = [[232, 150], [688, 190], [760, 1030], [140, 990]];
   const H = homography([[0, 0], [A4.w, 0], [A4.w, A4.h], [0, A4.h]], corners);
-  // 牆（紙的下緣之外）
+  // 牆：在紙下緣再往外 gap mm 的位置
+  const [wl, wr] = [project(H, [-60, A4.h + gap]), project(H, [A4.w + 60, A4.h + gap])];
+  const slope = (wr[1] - wl[1]) / (wr[0] - wl[0]);
   ctx.fillStyle = '#d9d2c6';
   ctx.beginPath();
-  ctx.moveTo(0, 1000);
-  ctx.lineTo(140, 990);
-  ctx.lineTo(760, 1030);
-  ctx.lineTo(900, 1040);
+  ctx.moveTo(0, wl[1] - slope * wl[0]);
+  ctx.lineTo(900, wl[1] + slope * (900 - wl[0]));
   ctx.lineTo(900, 1200);
   ctx.lineTo(0, 1200);
   ctx.fill();
@@ -395,7 +479,7 @@ export function demoPhoto({ length = 255, width = 100, flip = false } = {}) {
   corners.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
   ctx.fill();
   // 腳的輪廓（紙上的 mm 座標）：腳跟貼著紙的下緣（牆），往上是腳尖
-  const heelY = A4.h - 0.5;
+  const heelY = A4.h + gap - 0.5;
   const cx = A4.w / 2;
   const prof = [[0, 0.0], [0.03, 0.27], [0.12, 0.33], [0.3, 0.34], [0.5, 0.4], [0.68, 0.5], [0.78, 0.49], [0.88, 0.42], [0.95, 0.3], [0.99, 0.14], [1, 0]];
   const hw = (t) => {
@@ -672,7 +756,13 @@ export function openFootScan(onResult) {
     $('#scan-back').addEventListener('click', stepIntro);
     $('#scan-next').addEventListener('click', () => {
       state.corners = editor.points();
-      state.rect = rectify(photo, state.corners);
+      state.ext = rectify(photo, state.corners, PAD);
+      // 只有紙的部分（偵測腳用）
+      const rect = document.createElement('canvas');
+      rect.width = Math.round(A4.w * RECT_SCALE);
+      rect.height = Math.round(A4.h * RECT_SCALE);
+      rect.getContext('2d').drawImage(state.ext, -Math.round(PAD.x * RECT_SCALE), -Math.round(PAD.y * RECT_SCALE));
+      state.rect = rect;
       stepFoot();
     });
   }
@@ -680,11 +770,26 @@ export function openFootScan(onResult) {
   // ── 第 3 步：確認腳跟、腳尖、最寬處 ──
   function stepFoot() {
     setHeader('3 / 3', '確認腳的位置');
-    const rect = state.rect;
-    const auto = detectFoot(rect);
-    const toPx = (p) => [p[0] * RECT_SCALE, p[1] * RECT_SCALE];
-    const def = { heel: [A4.w / 2, A4.h - 15], toe: [A4.w / 2, 30], inner: [A4.w / 2 - 50, 100], outer: [A4.w / 2 + 50, 100] };
-    const f = auto || def;
+    const auto = detectFoot(state.rect);
+    // 紙座標（mm）→ 含紙外範圍的畫面像素
+    const toPx = (p) => [(p[0] + PAD.x) * RECT_SCALE, (p[1] + PAD.y) * RECT_SCALE];
+    const def = { heel: [A4.w / 2, A4.h], toe: [A4.w / 2, 30], inner: [A4.w / 2 - 50, 100], outer: [A4.w / 2 + 50, 100] };
+    const f = auto ? { ...auto, heel: [...auto.heel] } : def;
+    // 紙和牆之間如果有空隙（紙滑開、踢腳板），腳跟其實在紙外，把空隙加回去
+    let gap = 0;
+    if (auto) {
+      const heelAtTop = auto.heel[1] < A4.h / 2;
+      const atEdge = heelAtTop ? auto.heel[1] <= 0.5 : auto.heel[1] >= A4.h - 0.5;
+      if (atEdge) {
+        gap = detectWallGap(state.ext, PAD, heelAtTop, auto.toe[0]);
+        if (gap) f.heel[1] = heelAtTop ? -gap : A4.h + gap;
+      }
+    }
+    const note = state.demo
+      ? '示範照片的實際尺寸：腳長 25.5 cm、腳寬 10.0 cm。'
+      : gap
+        ? `偵測到紙和牆之間有 ${Math.round(gap)} mm 空隙，已自動算進腳長（虛線是牆的位置）。`
+        : '腳跟要貼齊紙邊（靠牆），不然腳長會偏短。誤差約 ±3 mm，建議兩腳都量、取較大的數字。';
     $('.scan-body').innerHTML = `
       <p class="scan-help">${auto ? '已自動找到腳的位置，' : '沒有自動找到腳，'}請確認<b>腳跟、腳尖</b>和<b>腳掌最寬的兩側</b>位置正確。</p>
       <div class="scan-result">
@@ -692,7 +797,7 @@ export function openFootScan(onResult) {
         <div><span>腳寬</span><b id="r-wid">—</b></div>
       </div>
       <div class="scan-stage scan-stage-rect" id="stage"></div>
-      <p class="scan-note" id="scan-note">${state.demo ? '示範照片的實際尺寸：腳長 25.5 cm、腳寬 10.0 cm。' : '腳跟要貼齊紙邊（靠牆），不然腳長會偏短。誤差約 ±3 mm，建議兩腳都量、取較大的數字。'}</p>`;
+      <p class="scan-note" id="scan-note">${note}</p>`;
     $('.scan-foot').innerHTML = `
       <button type="button" class="btn-primary" id="scan-use">使用這個結果</button>
       <button type="button" class="link-btn" id="scan-back">回上一步調整紙的位置</button>`;
@@ -708,10 +813,11 @@ export function openFootScan(onResult) {
       $('#scan-use').disabled = odd;
       if (odd) $('#scan-note').textContent = '數字不太合理，請確認四個點的位置。';
     };
-    createEditor($('#stage'), rect, [toPx(f.heel), toPx(f.toe), toPx(f.inner), toPx(f.outer)], {
+    createEditor($('#stage'), state.ext, [toPx(f.heel), toPx(f.toe), toPx(f.inner), toPx(f.outer)], {
       labels: ['跟', '尖', '寬', '寬'],
       lines: [[0, 1], [2, 3]],
       grid: true,
+      wallLine: 0,
       heightRatio: 0.44,
       onChange: update,
     });
@@ -732,7 +838,7 @@ export function openFootScan(onResult) {
  * @param canvas 要顯示的圖（照片或拉正後的紙）
  * @param pts    初始點（圖片像素座標）
  */
-function createEditor(stage, canvas, pts, { labels, polygon = false, lines = [], grid = false, heightRatio = 0.58, onChange = () => {} }) {
+function createEditor(stage, canvas, pts, { labels, polygon = false, lines = [], grid = false, wallLine = -1, heightRatio = 0.58, onChange = () => {} }) {
   const points = pts.map((p) => [...p]);
   const maxH = Math.min(window.innerHeight * heightRatio, 640);
   const scale = Math.min(stage.clientWidth / canvas.width, maxH / canvas.height);
@@ -780,6 +886,7 @@ function createEditor(stage, canvas, pts, { labels, polygon = false, lines = [],
     }
     const d = points.map((p) => [p[0] * scale, p[1] * scale]);
     if (polygon) s += `<polygon points="${d.map((p) => p.join(',')).join(' ')}" class="poly"/>`;
+    if (wallLine >= 0) s += `<line x1="0" y1="${d[wallLine][1]}" x2="${dw}" y2="${d[wallLine][1]}" class="wall"/><text x="6" y="${d[wallLine][1] - 5}" class="wall-t">牆</text>`;
     for (const [a, b] of lines) s += `<line x1="${d[a][0]}" y1="${d[a][1]}" x2="${d[b][0]}" y2="${d[b][1]}" class="ln"/>`;
     svg.innerHTML = s;
     handles.forEach((h, i) => {

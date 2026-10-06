@@ -705,3 +705,5 @@ input[aria-invalid="true"] { border-color: var(--alert-line); }
 .scan-result div { background: var(--ink); color: var(--hero-ink); border-radius: 12px; padding: 8px 12px; }
 .scan-result span { display: block; font-size: 11px; letter-spacing: 0.14em; color: var(--gold-soft); }
 .scan-result b { font-family: var(--display); font-size: 26px; font-weight: 600; }
+.scan-overlay .wall { stroke: #1f1d1a; stroke-width: 1.5; stroke-dasharray: 5 4; }
+.scan-overlay .wall-t { font-size: 11px; fill: #1f1d1a; font-family: var(--sans); }
